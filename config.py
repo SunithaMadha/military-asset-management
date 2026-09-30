@@ -14,6 +14,7 @@ class Config:
         f"{os.getenv('DB_PASSWORD')}@"
         f"{os.getenv('DB_HOST')}/"
         f"{os.getenv('DB_NAME')}"
+        f"?ssl_check_hostname=false"
     )
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
